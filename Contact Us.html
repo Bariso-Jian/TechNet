@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNet: Contact Us!</title>
+    <link rel="icon" type="image/x-icon" href="LogoFav.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2b2b4f;
+            font-family: "Inter", sans-serif;
+;
+        }
+
+        header {
+            font-family: "Open Sans", sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 5%;
+            background-color: #b1ccc5;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            width: 10rem; /*180px*/
+            height: auto;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            font-size: 1.25rem; /*20px*/
+            color: #2b2b4f;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: #121a22;
+        }
+
+        .nav-links li a button {
+            padding: 0.5rem 1.2rem;
+            background-color: #98bdbb;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.25rem;
+            color: #E7F2EF;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-links li a button:hover {
+            background-color: #698382;
+        }
+
+        .footer-top {
+            background-color: #2b2b4f;
+            border-top: 3px solid white;
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 230px;
+            padding: 1.5rem 5%;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .contact-top {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact img {
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+
+        .contact .label {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .phoneNumber, .email {
+            margin-left: 2.5rem;
+            font-size: 0.9rem;
+        }
+
+        .problemSec {
+            margin-bottom: 12px;
+            padding: 4% 5%;
+        }
+
+        .problemContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .problemContainer h1 {
+            font-weight: 400;
+            font-size: 80px;
+            color: #E7F2EF;
+        }
+
+        .problemContainer img {
+            width: 45%;
+            height: 40%;
+        }
+
+        .filloutFormSec {
+            margin-bottom: 50px;
+            padding: 5% 6%;
+        }
+
+        .filloutForms {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .filloutForms p {
+            font-weight: 250;
+            font-size: 20px;
+            padding-right: 20%;
+            line-height: 1.5;
+            color: #E7F2EF;
+        }
+
+        .filloutForms form {
+            text-align: right;
+            color: #E7F2EF;
+            font-size: 24px;
+        }
+
+        .filloutForms form input {
+            padding: 8px;
+            width: 84%;
+            border-radius: 6px;
+            border: none;
+        }
+
+        .filloutForms form select {
+            padding: 8px;
+            width: 90%;
+            border-radius: 6px;
+            border: none;
+        }
+
+        .filloutForms form textarea {
+            padding: 10px;
+            width: 100%;
+            border-radius: 6px;
+            border: none;
+        }
+
+        .confirm {
+            padding-top: 30px;
+        }
+
+        .confirm label {
+            font-weight: 200;
+            font-size: 20px;
+        }
+
+        .confirm button {
+            padding: 16px 32px;
+            background-color: #19183B;
+            border: none;
+            border-radius: 6px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #E7F2EF;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .confirm button:hover {
+            background-color: #0c0b1b;
+        }
+
+        .footer-bottom {
+            font-family: "Open Sans", sans-serif;
+            background-color: #19183B;
+            color: white;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .f-AboutUs {
+            border-right: 2px solid white;
+            padding-right: 1rem;
+        }
+
+        .f-AboutUs h2 {
+            margin-bottom: 1rem;
+        }
+
+        .f-OnlineServices {
+            padding: 0 2rem;
+        }
+
+        .f-OnlineServices h2 {
+            margin-bottom: 1rem;
+        }
+
+        .f-OnlineServices ul {
+            list-style: none;
+        }
+
+        /*IT'S RESPONSIVE WEBSITE TIME BABY WOOOOOOOO!!!*/
+
+        /*This is tablet size*/
+        @media (max-width: 1024px) {
+            .problemContainer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .problemContainer img {
+                width: 70%;
+                margin-top: 20px;
+            }
+
+            .problemContainer h1 {
+                font-size: 48px;
+            }
+
+            .filloutForms {
+                flex-direction: column;
+                text-align: left;
+            }
+
+            .filloutForms p {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+        } 
+
+        /* Phones */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+                padding: 12px;
+            }
+
+            .nav-links li {
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .footer-top {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .problemContainer h1 {
+                font-size: 32px;
+            }
+
+            .problemContainer img {
+                width: 50%;
+                margin-top: 15px;
+            }
+
+            .f-OnlineServices {
+                padding: 0;
+                text-align: center;
+            }
+
+            .filloutForms form input,
+            .filloutForms form select,
+            .filloutForms form textarea {
+                width: 100%;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="TechNet Logo.png" alt="TechNet Logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#aboutUs">About us</a></li>
+                <li><a href="Contact Us.html">Contact us</a></li>
+                <li><a href="Shopping-page.html"><button>New Deals</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="problemSec">
+        <div class="problemContainer">
+            <h1>Have a problem? <u>Contact us!</u></h1>
+            <img src="TechSupport-girl.webp" alt="Support Tech woman">
+        </div>
+    </section>
+
+    <section class="filloutFormSec">
+        <div class="filloutForms">
+            <p>If you ever received a faulty part, or didn't receive your order, or have another issue. You can always contact us, and our team will immediently try to resolve your issue!<br><br>
+            Please take note that if your message is not a valid issue, it will be ignored</p>
+
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="typeofissue">Type of Issue:</label><br>
+                <select name="typeofissue" id="typeofissue">
+                    <option value="delivery">Delivery did not arrive</option>
+                    <option value="faulty">Received part is faulty, broken, or malfunctioning</option>
+                    <option value="failure">Failure for return of item</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="other">Other (please specifiy in the message box below)</option>
+                </select><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="10" cols="60"></textarea>
+
+                <div class="confirm">
+                    <label for="agree">
+                        By contacting us, you agree that you have read and understood the <u>terms of service</u>
+                        <input type="checkbox" id="agree" name="agree" value="Check"></label><br>
+                    
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="contact">
+                <div class="contact-top">
+                    <img src="Calling-Img.png" alt="Calling Image">
+                    <p class="label">Call Us!</p>
+                </div>
+                <p class="phoneNumber">+63 965 173 5398</p>
+            </div>
+
+            <div class="contact">
+                <div class="contact-top">
+                    <img src="Mail-Img.png" alt="Mail Image">
+                    <p class="label">Mail Us!</p>
+                </div>
+                <p class="email">TechNetWorkEmail@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="f-AboutUs">
+                <h2 id="aboutUs">About us</h2>
+                <p>TechNet is an online service company, where our main goal is to sell or build Computers for our
+                    customers to enjoy</p>
+            </div>
+
+            <div class="f-OnlineServices">
+                <h2>Online Services</h2>
+                <ul>
+                    <li>-Latest PC hardware(NVDIA, AMD, Intel) -Available Accessories for and Laptops for sale</li>
+                    <li>-Pre/Custom-Built PCs available</li>
+                    <li>-Available accesories for PCs (Mice, Keyboards, etc.)</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
