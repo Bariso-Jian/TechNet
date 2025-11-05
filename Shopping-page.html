@@ -736,9 +736,8 @@
             const overlay = document.querySelector(".overlay");
 
             document.querySelectorAll('.carousel-track img').forEach((img, index) => {
-                img.style.cursor = "pointer"; // show clickable cursor
+                img.style.cursor = "pointer";
                 img.addEventListener('click', () => {
-                    console.log("Clicked image index:", index);
                     overlay.classList.add("show");
                     box.classList.add("show");
                 });
@@ -750,10 +749,8 @@
             });
 
             pay.addEventListener("click", () => {
-                setTimeout(() => {
-                    box.classList.remove("show");
-                    overlay.classList.remove("show");
-                }, 1000);
+                alert("Your purchase was succesful and the order has been placed! Thank you for supporting our website!");
+                window.location.href = "index.html";
             });
         </script>
 </body>
