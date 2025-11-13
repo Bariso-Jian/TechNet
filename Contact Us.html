@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNet: Contact Us!</title>
+    <link rel="icon" type="image/x-icon" href="LogoFav.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="TechNet Logo.png" alt="TechNet Logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#aboutUs">About us</a></li>
+                <li><a href="Contact Us.html">Contact us</a></li>
+                <li><a href="Shopping-page.html"><button>New Deals</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="problemSec">
+        <div class="problemContainer">
+            <h1>Have a problem? <u>Contact us!</u></h1>
+            <img src="TechSupport-girl.webp" alt="Support Tech woman">
+        </div>
+    </section>
+
+    <section class="filloutFormSec">
+        <div class="filloutForms">
+            <p>If you ever received a faulty part, or didn't receive your order, or have another issue. You can always contact us, and our team will immediently try to resolve your issue!<br><br>
+            Please take note that if your message is not a valid issue, it will be ignored</p>
+
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="typeofissue">Type of Issue:</label><br>
+                <select name="typeofissue" id="typeofissue">
+                    <option value="delivery">Delivery did not arrive</option>
+                    <option value="faulty">Received part is faulty, broken, or malfunctioning</option>
+                    <option value="failure">Failure for return of item</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="other">Other (please specifiy in the message box below)</option>
+                </select><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="10" cols="60"></textarea>
+
+                <div class="confirm">
+                    <label for="agree">
+                        By contacting us, you agree that you have read and understood the <u>terms of service</u>
+                        <input type="checkbox" id="agree" name="agree" value="Check"></label><br>
+                    
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="contact">
+                <div class="contact-top">
+                    <img src="Calling-Img.png" alt="Calling Image">
+                    <p class="label">Call Us!</p>
+                </div>
+                <p class="phoneNumber">+63 965 173 5398</p>
+            </div>
+
+            <div class="contact">
+                <div class="contact-top">
+                    <img src="Mail-Img.png" alt="Mail Image">
+                    <p class="label">Mail Us!</p>
+                </div>
+                <p class="email">TechNetWorkEmail@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="f-AboutUs">
+                <h2 id="aboutUs">About us</h2>
+                <p>TechNet is an online service company, where our main goal is to sell or build Computers for our
+                    customers to enjoy</p>
+            </div>
+
+            <div class="f-OnlineServices">
+                <h2>Online Services</h2>
+                <ul>
+                    <li>-Latest PC hardware(NVDIA, AMD, Intel) -Available Accessories for and Laptops for sale</li>
+                    <li>-Pre/Custom-Built PCs available</li>
+                    <li>-Available accesories for PCs (Mice, Keyboards, etc.)</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
