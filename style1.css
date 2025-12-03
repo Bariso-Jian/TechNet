@@ -60,18 +60,18 @@
             color: #121a22;
         }
 
-        .nav-links li a button {
+        .RIP-Button {
             padding: 0.5rem 1.2rem;
             background-color: #98bdbb;
             border: none;
             border-radius: 6px;
             font-size: 1.25rem;
-            color: #E7F2EF;
+            color: #E7F2EF !important;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
-        .nav-links li a button:hover {
+        .RIP-Button:hover {
             background-color: #698382;
         }
 
@@ -191,19 +191,20 @@
             margin-bottom: 50px;
         }
 
-        #body1 .introduction a button {
+        #youWillBeMissed-Button {
             padding: 12px 38px;
+            width: 180px;
             background-color: #31303b;
             border: none;
             border-radius: 6px;
-            font-size: 20px;
+            font-size: 18px;
             color: #E7F2EF;
             cursor: pointer;
             box-shadow: none;
             transition: padding 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
-        #body1 .introduction a button:hover {
+        #youWillBeMissed-Button:hover {
             padding: 22px 48px;
             box-shadow: 0px 10px 10px 4px #65637a;
         }
